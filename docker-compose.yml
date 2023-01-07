@@ -1,0 +1,12 @@
+version: "1.0"
+
+services:
+  app1:
+  authorization-app:
+    image: 'conditional-dev:1.0'
+    ports:
+      - "8080:8080"
+    app2:
+      image: 'conditional-prod:1.0'
+      ports:
+        - "8080:8081"
